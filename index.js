@@ -8,13 +8,10 @@ require('dotenv/config');
 
 const app = express();
 
-// Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-// set the view engine to ejs
 app.set('view engine', 'ejs');
 
-// Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
