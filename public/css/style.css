@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+      }
+      body {
+        max-height: 100vh;
+      }
+      .header {
+        padding: 15px;
+        background-color: #fa2525;
+        width: 100vw;
+      }
+      .header h2 {
+        color: white;
+      }
+      button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background: #fa2525;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #fd4949;
+      }
+      input {
+        width: 100vw;
+        padding: 20px 10px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #c7c6c6;
+      }
+      textarea {
+        outline: none;
+        width: 100vw;
+        height: calc(100vh - 230px);
+        border: none;
+        resize: inherit;
+      }
+      ::placeholder {
+        color: #858585;
+      }
+      .tox-notification,
+      .tox-statusbar__branding {
+        display: none;
+      }
+      h1 {
+            padding: 10px;
+            font-weight: 300;
+        }
+        a {
+            padding: 10px;
+            color: #fa2525
+        }

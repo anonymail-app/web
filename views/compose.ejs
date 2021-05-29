@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Anonymail</title>
+    <script
+      src="https://cdn.tiny.cloud/1/t0w5wr27usmpydayiiuu5hhbkdqo2gm450vxqx9dtt0uyh2u/tinymce/5/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+    <script>
+      tinymce.init({
+        selector: "#message",
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h2>ANONYMAIL</h2>
+    </div>
+    <main>
+      <form method="POST" action="send">
+        <input type="text" placeholder="To" class="to" name="to" autocomplete="off"autocorrect="off" autocapitalize="off" spellcheck="false"/>
+        <input type="text" placeholder="CC" class="cc" name="cc" autocomplete="off"autocorrect="off" autocapitalize="off" spellcheck="false" /> <br />
+        <input
+          type="text"
+          placeholder="Subject"
+          class="subject"
+          name="subject"
+          style="border: none"
+        />
+        <textarea placeholder="Compose" name="message" id="message"></textarea>
+
+        <button type="submit">SEND</button>
+      </form>
+    </main>
+  </body>
+</html>
